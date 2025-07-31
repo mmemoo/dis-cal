@@ -28,6 +28,8 @@ if check_setup_state():
         img : nextcord.Attachment = nextcord.SlashOption(name="image",description="Image to be the foods calories in it estimated.")
     ):
         if img.content_type.startswith("image/"):
+            await interaction.response.defer()
+            
             with aiohttp.ClientSession() as session:
                 with session.get(img.url) as response:
                     if response.status == 200:
@@ -38,7 +40,7 @@ if check_setup_state():
             food_items = estimate_food_amounts("imgs/"+img.filename)
             total_nutrients,total_cals = estimate_cals_and_nutrients(food_items)
 
-            interaction.followup.send(f""":white_check_mark: Calories and nutrients estimated :
+            await interaction.followup.send(f""":white_check_mark: Calories and nutrients estimated :
 
     Total cals = {total_cals}
     Protein = {total_nutrients["Protein"][0] + " " + total_nutrients["Protein"][1]}""")
