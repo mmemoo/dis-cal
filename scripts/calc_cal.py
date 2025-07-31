@@ -53,7 +53,7 @@ def match_foodname(query):
 
     return result
 
-def estimate_cals(food_items):
+def estimate_cals_and_nutrients(food_items):
     total_nutrients = {}
     total_cals = 0
     
