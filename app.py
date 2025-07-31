@@ -44,3 +44,5 @@ Protein = {total_nutrients["Protein"][0] + " " + total_nutrients["Protein"][1]}"
         await interaction.response.send_message(
             ":exclamation: The content you uploaded wasn't an image, please upload a proper image. :exclamation:"
         )
+
+client.run(token)
