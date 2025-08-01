@@ -1,5 +1,5 @@
 import json
-from check_state import check_and_update_state
+from scripts.check_state import check_and_update_state
 
 def add_cal_to_state(cals):
     check_and_update_state()
