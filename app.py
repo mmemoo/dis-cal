@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings("ignore")
+
 import nextcord
 import argparse
 import aiohttp
