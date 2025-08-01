@@ -47,7 +47,7 @@ else:
     gdown.download("https://drive.google.com/uc?id=1Y8Adg5W_7NAUVLRYSLqGjqg2WtpcsngP","data/usda_data.zip")
     
     usda_data = zipfile.ZipFile("data/usda_data.zip")
-    usda_data.extractall("data/usda_data")
+    usda_data.extractall("data")
     
     os.remove("data/usda_data.zip")
 
@@ -60,7 +60,7 @@ else:
     gdown.download("https://drive.google.com/uc?id=1UHxM7G80Oa13FwnwroFWLmXmWxe69lwm","data/chromadb.zip")
     
     usda_data = zipfile.ZipFile("data/chromadb.zip")
-    usda_data.extractall("data/chromadb")
+    usda_data.extractall("data")
     
     os.remove("data/chromadb.zip")
 
