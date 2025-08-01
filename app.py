@@ -35,7 +35,7 @@ if check_setup_state():
         img : nextcord.Attachment = nextcord.SlashOption(name="image",description="Image to be the foods calories in it estimated.")
     ):
         if img.content_type.startswith("image/"):
-            await interaction.response.defer()
+            await interaction.response.defer(ephemeral=True)
             
             async with aiohttp.ClientSession() as session:
                 async with session.get(img.url) as response:
