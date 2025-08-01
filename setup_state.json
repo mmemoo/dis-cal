@@ -1,4 +1,6 @@
 {
     "chromadb" : false,
-    "usda_data" : false
+    "usda_data" : false,
+    "ollama" : false,
+    "brew" : false
 }
