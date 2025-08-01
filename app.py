@@ -44,10 +44,10 @@ if check_setup_state():
 
             os.remove("imgs/"+img.filename)
 
-            await interaction.followup.send(f""":white_check_mark: Calories and nutrients estimated :
+            await interaction.followup.send(f""":white_check_mark: **Calories and nutrients estimated :**
 
-    Total cals = {total_cals}
-    Protein = {str(total_nutrients["Protein"][0]) + " " + total_nutrients["Protein"][1]}""")
+--- **Total cals** = {total_cals}
+--- **Protein** = {str(total_nutrients["Protein"][0]) + " " + total_nutrients["Protein"][1]}""")
 
         else:
             await interaction.response.send_message(
