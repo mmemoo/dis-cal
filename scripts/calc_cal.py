@@ -11,7 +11,7 @@ import torch
 device = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
 encoder = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 
-food_csv = pandas.read_csv("usda_data/food.csv")
+food_csv = pandas.read_csv("data/usda_data/food.csv")
 food_csv = food_csv[[type(desc) == str for desc in food_csv["description"]]]
 food_csv["description"] = [i.lower().replace(",","") for i in food_csv["description"].tolist()]
 
