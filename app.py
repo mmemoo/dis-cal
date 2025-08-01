@@ -19,6 +19,9 @@ token = args.token
 if check_setup_state():
     client = nextcord.Client()
 
+    @client.event
+    async def on_ready():
+        print("The bot is ready to use")
 
     @client.slash_command(
         name="estimate",
