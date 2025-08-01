@@ -8,7 +8,8 @@ from scripts.json_utils import write_json,read_json
 
 write_json("setup_state.json","ollama",not not shutil.which("ollama"))
 write_json("setup_state.json","brew",not not shutil.which("brew"))
-
+write_json("setup_state.json","usda_data",os.path.exists("data/usda_data"))
+write_json("setup_state.json","chromadb",os.path.exists("data/chromadb"))
 
 if read_json("setup_state.json","ollama"):
     print("Ollama is already installed.")
