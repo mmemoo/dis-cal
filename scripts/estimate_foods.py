@@ -17,6 +17,7 @@ food_type : amount
 
 reply only with the food types and amounts in the specified format and nothing else
 the type shouldnt be like , theres food in the bowl so the bowl is this grams. no, it should be very specific like apple or green apple etc. also , specify the parts of the foods (like if its the wing of a chicken etc. if the food doesnt have a part dont specify it) etc. too. 
+also specify the cooking method (steamed,cooked,grilled,boiled etc.) in a specific way. like dont say cooked for everything cooked, specify if its boiled, steamed etc. etc.
 dont add grams , gr , ml etc. after the amount even if you are giving the amount in grams or ml
 
 reply with foundation foods , not the name of them mixed.
@@ -26,7 +27,6 @@ the prediction doesnt have to be a round number , it can be but you are not forc
 reply in json format
 
 and i step on it again,the amount should be in grams for solids and ml for liquids."""
-
 
 def estimate_food_amounts(img_path):
     path_2_img = img_path
