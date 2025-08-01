@@ -68,3 +68,11 @@ else:
     os.remove("data/chromadb.zip")
 
     write_json("setup_state.json","chromadb",True)
+
+
+if read_json("setup_state.json","model"):
+    print("model is already setup")
+else:
+    subprocess.run(["ollama","pull","qwen2.5vl:7b"])
+
+    write_json("setup_state.json","model",True)
