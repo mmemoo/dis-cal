@@ -22,7 +22,7 @@ if check_setup_state():
 
     @client.slash_command(
         name="estimate",
-        description="Estimate cals and nutrients in a photo which contains food. (Best works when only the foods you care are in the frame and from a good angle.)"
+        description="Estimate cals and nutrients in a photo which contains food."
     )
     async def estimate(
         interaction,
