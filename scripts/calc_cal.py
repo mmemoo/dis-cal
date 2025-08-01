@@ -58,7 +58,7 @@ def estimate_cals_and_nutrients(food_items):
     total_cals = 0
     
     for food_item in food_items:
-        food_name = food_item["food_name"].lower() + " " + food_item["cooking_method"].lower()
+        food_name = food_item["cooking_method"].lower() + " " + food_item["food_name"].lower()
         food_name = match_foodname(food_name)
 
         amount = food_item["amount"]
