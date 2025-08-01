@@ -6,9 +6,8 @@ import subprocess
 import os
 from scripts.json_utils import write_json,read_json
 
-
-write_json("setup_state.json","ollama",shutil.which("ollama") == True)
-write_json("setup_state.json","brew",shutil.which("brew") == True)
+write_json("setup_state.json","ollama",not not shutil.which("ollama"))
+write_json("setup_state.json","brew",not not shutil.which("brew"))
 
 
 if read_json("setup_state.json","ollama"):
