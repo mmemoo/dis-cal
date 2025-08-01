@@ -1,6 +1,7 @@
 import nextcord
 import argparse
 import aiohttp
+import os
 from scripts.add_cal_to_state import add_cal_to_state
 from scripts.calc_cal import estimate_cals_and_nutrients
 from scripts.estimate_foods import estimate_food_amounts
@@ -39,6 +40,8 @@ if check_setup_state():
 
             food_items = estimate_food_amounts("imgs/"+img.filename)
             total_nutrients,total_cals = estimate_cals_and_nutrients(food_items)
+
+            os.remove("imgs/"+img.filename)
 
             await interaction.followup.send(f""":white_check_mark: Calories and nutrients estimated :
 
