@@ -11,5 +11,3 @@ def add_cal_to_state(cals):
 
     with open("state.json","w") as f:
         json.dump(state_json,f)
-
-add_cal_to_state(1)
