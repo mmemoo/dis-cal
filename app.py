@@ -36,7 +36,8 @@ if check_setup_state():
                     if response.status == 200:
                         image_data = await response.read()
 
-                        await image_data.save("imgs/"+img.filename)
+                        with open("imgs/"+img.filename,"wb") as f:
+                            f.write(image_data)
 
             food_items = estimate_food_amounts("imgs/"+img.filename)
             total_nutrients,total_cals = estimate_cals_and_nutrients(food_items)
