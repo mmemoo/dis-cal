@@ -31,8 +31,8 @@ if check_setup_state():
         if img.content_type.startswith("image/"):
             await interaction.response.defer()
             
-            with aiohttp.ClientSession() as session:
-                with session.get(img.url) as response:
+            async with aiohttp.ClientSession() as session:
+                async with session.get(img.url) as response:
                     if response.status == 200:
                         image_data = await response.read()
 
