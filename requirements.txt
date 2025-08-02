@@ -1,0 +1,9 @@
+aiohttp==3.12.15
+chromadb==1.0.15
+gdown==5.2.0
+nextcord==2.6.0
+ollama==0.5.1
+pandas==2.3.1
+pydantic==2.11.7
+sentence_transformers==5.0.0
+torch==2.7.1
