@@ -1,4 +1,4 @@
-# DIS-CAL
+# DIS-CAL
 <p align = center>**A local and free helper in your weight loss/gain journey**</p>
 <p align = center>
 <a href="https://github.com/mmemoo/dis-cal"><img width="400" alt="DIS-CAL Logo" src="logo.png" /></a><br />
@@ -27,7 +27,7 @@ python setup.py
 Or if you are lazy with this one liner :
 ```git clone https://github.com/mmemoo/dis-cal && cd dis-cal && pip install requirements.txt && python setup.py```
 
-# Running
+# Running
 To run the bot you need a to create discord bot and get its bot token
 After you get the token , you can run the model like this :
 ```
@@ -39,5 +39,5 @@ python app.py --token YOUR_BOT_TOKEN
 Again , if you are lazy with this one liner :
 ``` cd dis-cal && python app.py --token YOUR_BOT_TOKEN```
 
-# System requirements
+# System requirements
 - **A GPU with the minimum of a 6.5 GM vram**
