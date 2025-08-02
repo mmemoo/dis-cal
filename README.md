@@ -37,7 +37,7 @@ python app.py --token YOUR_BOT_TOKEN
 ```
 
 Again , if you are lazy with this one liner :
-``` cd dis-cal && python app.py --token YOUR_BOT_TOKEN```
+```cd dis-cal && python app.py --token YOUR_BOT_TOKEN```
 
 # System requirements
 - **A GPU with the minimum of a 6.5 GM vram**
