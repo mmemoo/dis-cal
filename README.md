@@ -19,13 +19,13 @@ git clone https://github.com/mmemoo/dis-cal
 
 cd dis-cal
 
-pip install requirements.txt
+pip install -r requirements.txt
 
 python setup.py
 ```
 
 Or if you are lazy with this one liner :
-```git clone https://github.com/mmemoo/dis-cal && cd dis-cal && pip install requirements.txt && python setup.py```
+```git clone https://github.com/mmemoo/dis-cal && cd dis-cal && pip install -r requirements.txt && python setup.py```
 
 # Running
 To run the bot you need a to create discord bot and get its bot token
