@@ -51,6 +51,8 @@ if check_setup_state():
 
             os.remove("imgs/"+img.filename)
 
+            add_cal_to_state(total_cals)
+
             await interaction.followup.send(f""":white_check_mark: **Calories and nutrients estimated :**
 
 --- **Total cals** = {total_cals}
