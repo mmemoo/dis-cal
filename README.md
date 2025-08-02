@@ -1,5 +1,5 @@
 # DIS-CAL
-<p align = center>**A local and free helper in your weight loss/gain journey**</p>
+<p align = center><strong>A local and free helper in your weight loss/gain journey</strong></p>
 <p align = center>
 <a href="https://github.com/mmemoo/dis-cal"><img width="400" alt="DIS-CAL Logo" src="logo.png" /></a><br />
 </p>
