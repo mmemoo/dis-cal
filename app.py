@@ -58,7 +58,7 @@ if check_setup_state():
 
         else:
             await interaction.response.send_message(
-                ":exclamation: The content you uploaded wasn't an image, please upload a proper image. :exclamation:"
+                ":exclamation: The content you uploaded wasn't an image, please upload a proper image. :exclamation:",ephemeral=True
             )
 
     @client.slash_command("show_total")
