@@ -9,6 +9,7 @@ from scripts.add_cal_to_state import add_cal_to_state
 from scripts.calc_cal import estimate_cals_and_nutrients
 from scripts.estimate_foods import estimate_food_amounts
 from scripts.check_setup_state import check_setup_state
+from scripts.check_state import check_and_update_state
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
@@ -59,6 +60,11 @@ if check_setup_state():
             await interaction.response.send_message(
                 ":exclamation: The content you uploaded wasn't an image, please upload a proper image. :exclamation:"
             )
+
+    @client.slash_command("show_total")
+    async def show_total(interaction):
+        total_cals,date = check_and_update_state()
+        await interaction.response.send_message(f"Your total cals for {date} is {total_cals}",ephemeral=True)
 
     client.run(token)
 else:
