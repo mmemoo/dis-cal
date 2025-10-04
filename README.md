@@ -24,9 +24,6 @@ pip install -r requirements.txt
 python setup.py
 ```
 
-Or if you are lazy with this one liner :
-```git clone https://github.com/mmemoo/dis-cal && cd dis-cal && pip install -r requirements.txt && python setup.py```
-
 # Running
 To run the bot you need a to create discord bot and get its bot token
 After you get the token , you can run the model like this :
@@ -35,9 +32,6 @@ cd dis-cal
 
 python app.py --token YOUR_BOT_TOKEN
 ```
-
-Again , if you are lazy with this one liner :
-```cd dis-cal && python app.py --token YOUR_BOT_TOKEN```
 
 # System requirements
 - **A GPU with the minimum of a 6.5 GM vram**
