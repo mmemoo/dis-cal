@@ -25,8 +25,8 @@ python setup.py
 ```
 
 # Running
-To run the bot you need a to create discord bot and get its bot token
-After you get the token , you can run the model like this :
+To run the bot you need a to create discord bot and get its bot token.
+After you get the token , you can run the bot like this :
 ```
 cd dis-cal
 
